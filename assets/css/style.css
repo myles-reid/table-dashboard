@@ -35,10 +35,6 @@ a {
   justify-content: space-between;
 }
 
-.flex-even {
-  justify-content: space-evenly;
-}
-
 .flex-center {
   justify-content: center;
 }
@@ -72,7 +68,7 @@ header {
   h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-right: 15px;
+    margin-right: 18px;
   }
 
 /* - - - - - - - - - - - - */
@@ -124,7 +120,8 @@ header {
     }
 
     input[type=text]:focus {
-      border: 1px solid rgb(255 0 255 / 80%)
+      border: 1px solid rgb(255 0 255 / 80%);
+      transform: scale(1.01);
     }
   }
 }
@@ -143,7 +140,7 @@ main {
 table {
   height: 40rem;
   width: 100%;
-  border-spacing: 0 8px;
+  border-spacing: 0px 8px; 
   border-collapse: separate;
 
   tr + tr {
@@ -170,13 +167,14 @@ table {
   }
 
 /* - - - - - - - - - - - - */
-/* Icon style              */
+/* Letter Icon Style       */
 /* - - - - - - - - - - - - */
   
   .box {
     height: 3rem;
     width: 3rem;
   } 
+
    .letter {
     height: 3.2rem;
     width: 3.2rem;
@@ -209,7 +207,7 @@ table {
   }
 
   input[type=button]:hover {
-    background-color: #c1c6c9; 
+    background-color: #dcdee1; 
   }
 
 /* - - - - - - - - - - - - */
@@ -250,8 +248,8 @@ table {
   }
 
   .visit .letter {
-    color: #be9c00;
-    background-color:rgb(190 156 0 / 20%);
+    color: #aa8c00;
+    background-color:rgb(170 140 0 / 30%);
   }
 
 
@@ -259,29 +257,28 @@ table {
 /* Table hover             */
 /* - - - - - - - - - - - - */
 
-.user:hover {
-  background-color:rgb(30 144 255 / 20%);
-}
+  .user:hover {
+    background-color:rgb(30 144 255 / 20%);
+  }
 
-.article:hover {
-  background-color:rgb(255 69 0 / 20%);
-}
+  .article:hover {
+    background-color:rgb(255 69 0 / 20%);
+  }
 
-.author:hover  {
-  background-color:rgb(0 105 62 / 20%);
-}
+  .author:hover  {
+    background-color:rgb(0 105 62 / 20%);
+  }
 
-.message:hover  {
-  background-color:rgb(143 0 255 / 20%);
-}
+  .message:hover  {
+    background-color:rgb(143 0 255 / 20%);
+  }
 
-.visit:hover  {
-  background-color:rgb(190 156 0 / 20%);
-  
-}
+  .visit:hover  {
+    background-color:rgb(170 140 0 / 20%);
+  }
 
-tr.easeinout:hover {
-  box-shadow: 2px 2px 12px rgb(0 0 0 / 15%);
-}
-
+  tr.easeinout:hover {
+    box-shadow: 2px 2px 12px rgb(0 0 0 / 15%);
+    transform: scale(1.03);
+  }
 }
