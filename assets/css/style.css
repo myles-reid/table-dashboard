@@ -1,8 +1,31 @@
 @charset "utf-8";
 
+/* - - - - - - - - - - - - */
+/* General Rules           */
+/* - - - - - - - - - - - - */
+
+:root {
+  --unit-height: 50px
+}
+
 html {
   font-family: 'Nunito Sans', 'Fira Sans', Arial, sans-serif;
 }
+
+* {
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+/* - - - - - - - - - - - - */
+/* Utilities               */
+/* - - - - - - - - - - - - */
 
 .container {  
   width: min(100% - 32px, 1000px);
@@ -17,7 +40,112 @@ html {
   justify-content: space-between;
 }
 
+.flex-even {
+  justify-content: space-evenly;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-align {
+  align-items: center;
+}
+
 .grid-center {
   display: grid;
   place-items: center;
+}
+
+/* - - - - - - - - - - - - */
+/* Header                  */
+/* - - - - - - - - - - - - */
+
+header {
+  background-color: rgb(155 0 155 / 20%);
+  height: var(--unit-height);
+
+  h1, li {
+    line-height: var(--unit-height)
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-right: 15px;
+  }
+
+  ul {
+    width: 25rem;
+    gap: 5px;
+  
+    li {
+      font-size: 1.5rem;
+      font-weight: 400;
+    
+      a {
+        background-color: rgb(0 255 255 / 25%);
+        padding: 3px 9px;
+        border-radius: 50px;
+      }   
+    }
+  }
+
+  form {
+    font-size: 0;
+
+    input[type=text], input[type=submit] {
+      height: 25px;
+      font-size: 1.3rem;
+      border-radius: 5px;
+    }
+
+    input[type=text] {
+      width: 175px;
+      padding: 0 0 0 10px;
+    }
+
+    input[type=submit] {
+      width: 60px;
+      margin-left: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - */
+/* Table                   */
+/* - - - - - - - - - - - - */
+
+main {
+  background-color: #f4f5f7;
+  height: calc(100svh - 40px);
+
+  div {height: calc(100% - 40px);}
+
+}
+
+table {
+  height: 45rem;
+  width: 90rem;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+
+  
+  tr {
+    background-color: rgb(0 0 255 / 50%);  
+  }
+  
+  .left-edge {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .right-edge {
+    border-radius: 0 8px 8px 0;
+  }
 }
